@@ -12,4 +12,4 @@ Use the Atom Package Manager and search for "linter-spell-protobuf", or run `apm
 ## Prerequisites
 
 * [linter-spell](https://atom.io/packages/linter-spell)
-* [language-go](https://atom.io/packages/language-protobuf)
+* [language-protobuf](https://atom.io/packages/language-protobuf)
