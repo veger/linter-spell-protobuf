@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "github.com/golang/protobuf/ptypes/empty/empty.proto";
+
+// API is some sample API
+service API {
+    // Method is some test method
+    rpc Method (Request) returns (google.protobuf.Empty) {}
+}
+
+// Request is the request payload for Method
+message Request {
+    string param1 = 1;
+    int param2 = 2;
+}

@@ -1,0 +1,43 @@
+{
+  "name": "linter-spell-protobuf",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Protobuf spell checking using linter-spell",
+  "keywords": [
+    "linter",
+    "linter-spell",
+    "protobuf",
+    "spell-check"
+  ],
+  "repository": "https://github.com/veger/linter-spell-protobuf",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/veger/linter-spell-protobuf/issues"
+  },
+  "dependencies": {
+    "atom-package-deps": "^5.0.0",
+    "linter-spell-word-list": "^0.5.0"
+  },
+  "package-deps": [
+    "linter-spell",
+    "language-protobuf"
+  ],
+  "activationHooks": [
+    "language-protobuf:grammar-used"
+  ],
+  "providedServices": {
+    "linter-spell-grammar": {
+      "versions": {
+        "1.0.0": "provideGrammar"
+      }
+    },
+    "linter-spell-dictionary": {
+      "versions": {
+        "1.0.0": "provideDictionary"
+      }
+    }
+  }
+}
